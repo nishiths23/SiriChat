@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026628201DA96D3A00A275E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266281F1DA96D3A00A275E0 /* AppDelegate.swift */; };
+		026628221DA96D3A00A275E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026628211DA96D3A00A275E0 /* ViewController.swift */; };
+		026628251DA96D3A00A275E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026628231DA96D3A00A275E0 /* Main.storyboard */; };
+		026628271DA96D3A00A275E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026628261DA96D3A00A275E0 /* Assets.xcassets */; };
+		0266282A1DA96D3A00A275E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026628281DA96D3A00A275E0 /* LaunchScreen.storyboard */; };
+		026628391DA96E7D00A275E0 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026628381DA96E7D00A275E0 /* IntentHandler.swift */; };
+		0266283D1DA96E7D00A275E0 /* SiriChatIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 026628361DA96E7D00A275E0 /* SiriChatIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0266284B1DAAB83300A275E0 /* SiriChatApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 026628491DAAB83300A275E0 /* SiriChatApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0266284E1DAAB83300A275E0 /* SiriChatApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026628471DAAB83300A275E0 /* SiriChatApi.framework */; };
+		0266284F1DAAB83300A275E0 /* SiriChatApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 026628471DAAB83300A275E0 /* SiriChatApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		026628551DAABB9000A275E0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026628541DAABB9000A275E0 /* Person.swift */; };
+		026628591DAAC56300A275E0 /* ContactsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026628581DAAC56300A275E0 /* ContactsFetcher.swift */; };
+		0281D4431DAC11E20077DFD0 /* SiriChatApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281D4421DAC11E20077DFD0 /* SiriChatApiHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0266283B1DA96E7D00A275E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 026628141DA96D3A00A275E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 026628351DA96E7D00A275E0;
+			remoteInfo = SiriChatIntentExtension;
+		};
+		0266284C1DAAB83300A275E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 026628141DA96D3A00A275E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 026628461DAAB83300A275E0;
+			remoteInfo = SiriChatApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		026628411DA96E7D00A275E0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0266283D1DA96E7D00A275E0 /* SiriChatIntentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628531DAAB83300A275E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0266284F1DAAB83300A275E0 /* SiriChatApi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0266281C1DA96D3A00A275E0 /* SiriChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0266281F1DA96D3A00A275E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		026628211DA96D3A00A275E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		026628241DA96D3A00A275E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		026628261DA96D3A00A275E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		026628291DA96D3A00A275E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0266282B1DA96D3A00A275E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026628311DA96D4B00A275E0 /* SiriChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriChat.entitlements; sourceTree = "<group>"; };
+		026628361DA96E7D00A275E0 /* SiriChatIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriChatIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		026628381DA96E7D00A275E0 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		0266283A1DA96E7D00A275E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026628471DAAB83300A275E0 /* SiriChatApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SiriChatApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		026628491DAAB83300A275E0 /* SiriChatApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriChatApi.h; sourceTree = "<group>"; };
+		0266284A1DAAB83300A275E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026628541DAABB9000A275E0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		026628581DAAC56300A275E0 /* ContactsFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsFetcher.swift; sourceTree = "<group>"; };
+		0281D4421DAC11E20077DFD0 /* SiriChatApiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriChatApiHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		026628191DA96D3A00A275E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0266284E1DAAB83300A275E0 /* SiriChatApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628331DA96E7D00A275E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628431DAAB83300A275E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026628131DA96D3A00A275E0 = {
+			isa = PBXGroup;
+			children = (
+				0266281E1DA96D3A00A275E0 /* SiriChat */,
+				026628371DA96E7D00A275E0 /* SiriChatIntentExtension */,
+				026628481DAAB83300A275E0 /* SiriChatApi */,
+				0266281D1DA96D3A00A275E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0266281D1DA96D3A00A275E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0266281C1DA96D3A00A275E0 /* SiriChat.app */,
+				026628361DA96E7D00A275E0 /* SiriChatIntentExtension.appex */,
+				026628471DAAB83300A275E0 /* SiriChatApi.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0266281E1DA96D3A00A275E0 /* SiriChat */ = {
+			isa = PBXGroup;
+			children = (
+				026628311DA96D4B00A275E0 /* SiriChat.entitlements */,
+				0266281F1DA96D3A00A275E0 /* AppDelegate.swift */,
+				026628211DA96D3A00A275E0 /* ViewController.swift */,
+				026628231DA96D3A00A275E0 /* Main.storyboard */,
+				026628261DA96D3A00A275E0 /* Assets.xcassets */,
+				026628281DA96D3A00A275E0 /* LaunchScreen.storyboard */,
+				0266282B1DA96D3A00A275E0 /* Info.plist */,
+			);
+			path = SiriChat;
+			sourceTree = "<group>";
+		};
+		026628371DA96E7D00A275E0 /* SiriChatIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				026628381DA96E7D00A275E0 /* IntentHandler.swift */,
+				0266283A1DA96E7D00A275E0 /* Info.plist */,
+			);
+			path = SiriChatIntentExtension;
+			sourceTree = "<group>";
+		};
+		026628481DAAB83300A275E0 /* SiriChatApi */ = {
+			isa = PBXGroup;
+			children = (
+				026628491DAAB83300A275E0 /* SiriChatApi.h */,
+				0266284A1DAAB83300A275E0 /* Info.plist */,
+				026628541DAABB9000A275E0 /* Person.swift */,
+				026628581DAAC56300A275E0 /* ContactsFetcher.swift */,
+				0281D4421DAC11E20077DFD0 /* SiriChatApiHelper.swift */,
+			);
+			path = SiriChatApi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		026628441DAAB83300A275E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0266284B1DAAB83300A275E0 /* SiriChatApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0266281B1DA96D3A00A275E0 /* SiriChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0266282E1DA96D3A00A275E0 /* Build configuration list for PBXNativeTarget "SiriChat" */;
+			buildPhases = (
+				026628181DA96D3A00A275E0 /* Sources */,
+				026628191DA96D3A00A275E0 /* Frameworks */,
+				0266281A1DA96D3A00A275E0 /* Resources */,
+				026628411DA96E7D00A275E0 /* Embed App Extensions */,
+				026628531DAAB83300A275E0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0266283C1DA96E7D00A275E0 /* PBXTargetDependency */,
+				0266284D1DAAB83300A275E0 /* PBXTargetDependency */,
+			);
+			name = SiriChat;
+			productName = SiriChat;
+			productReference = 0266281C1DA96D3A00A275E0 /* SiriChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		026628351DA96E7D00A275E0 /* SiriChatIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0266283E1DA96E7D00A275E0 /* Build configuration list for PBXNativeTarget "SiriChatIntentExtension" */;
+			buildPhases = (
+				026628321DA96E7D00A275E0 /* Sources */,
+				026628331DA96E7D00A275E0 /* Frameworks */,
+				026628341DA96E7D00A275E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriChatIntentExtension;
+			productName = SiriChatIntentExtension;
+			productReference = 026628361DA96E7D00A275E0 /* SiriChatIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		026628461DAAB83300A275E0 /* SiriChatApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026628501DAAB83300A275E0 /* Build configuration list for PBXNativeTarget "SiriChatApi" */;
+			buildPhases = (
+				026628421DAAB83300A275E0 /* Sources */,
+				026628431DAAB83300A275E0 /* Frameworks */,
+				026628441DAAB83300A275E0 /* Headers */,
+				026628451DAAB83300A275E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriChatApi;
+			productName = SiriChatApi;
+			productReference = 026628471DAAB83300A275E0 /* SiriChatApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		026628141DA96D3A00A275E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Awesome developers";
+				TargetAttributes = {
+					0266281B1DA96D3A00A275E0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CA4USNGUDS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					026628351DA96E7D00A275E0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					026628461DAAB83300A275E0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CA4USNGUDS;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 026628171DA96D3A00A275E0 /* Build configuration list for PBXProject "SiriChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 026628131DA96D3A00A275E0;
+			productRefGroup = 0266281D1DA96D3A00A275E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0266281B1DA96D3A00A275E0 /* SiriChat */,
+				026628351DA96E7D00A275E0 /* SiriChatIntentExtension */,
+				026628461DAAB83300A275E0 /* SiriChatApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0266281A1DA96D3A00A275E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0266282A1DA96D3A00A275E0 /* LaunchScreen.storyboard in Resources */,
+				026628271DA96D3A00A275E0 /* Assets.xcassets in Resources */,
+				026628251DA96D3A00A275E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628341DA96E7D00A275E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628451DAAB83300A275E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		026628181DA96D3A00A275E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026628221DA96D3A00A275E0 /* ViewController.swift in Sources */,
+				026628201DA96D3A00A275E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628321DA96E7D00A275E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026628391DA96E7D00A275E0 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026628421DAAB83300A275E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0281D4431DAC11E20077DFD0 /* SiriChatApiHelper.swift in Sources */,
+				026628591DAAC56300A275E0 /* ContactsFetcher.swift in Sources */,
+				026628551DAABB9000A275E0 /* Person.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0266283C1DA96E7D00A275E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 026628351DA96E7D00A275E0 /* SiriChatIntentExtension */;
+			targetProxy = 0266283B1DA96E7D00A275E0 /* PBXContainerItemProxy */;
+		};
+		0266284D1DAAB83300A275E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 026628461DAAB83300A275E0 /* SiriChatApi */;
+			targetProxy = 0266284C1DAAB83300A275E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		026628231DA96D3A00A275E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026628241DA96D3A00A275E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		026628281DA96D3A00A275E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026628291DA96D3A00A275E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0266282C1DA96D3A00A275E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0266282D1DA96D3A00A275E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0266282F1DA96D3A00A275E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriChat/SiriChat.entitlements;
+				DEVELOPMENT_TEAM = CA4USNGUDS;
+				INFOPLIST_FILE = SiriChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesomedevelopers.SiriChatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		026628301DA96D3A00A275E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriChat/SiriChat.entitlements;
+				DEVELOPMENT_TEAM = CA4USNGUDS;
+				INFOPLIST_FILE = SiriChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesomedevelopers.SiriChatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0266283F1DA96E7D00A275E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SiriChatIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesomedevelopers.SiriChatDemo.SiriChatIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		026628401DA96E7D00A275E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SiriChatIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesomedevelopers.SiriChatDemo.SiriChatIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		026628511DAAB83300A275E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CA4USNGUDS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SiriChatApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesomedevelopers.SiriChatApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		026628521DAAB83300A275E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CA4USNGUDS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SiriChatApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesomedevelopers.SiriChatApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		026628171DA96D3A00A275E0 /* Build configuration list for PBXProject "SiriChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0266282C1DA96D3A00A275E0 /* Debug */,
+				0266282D1DA96D3A00A275E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0266282E1DA96D3A00A275E0 /* Build configuration list for PBXNativeTarget "SiriChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0266282F1DA96D3A00A275E0 /* Debug */,
+				026628301DA96D3A00A275E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0266283E1DA96E7D00A275E0 /* Build configuration list for PBXNativeTarget "SiriChatIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0266283F1DA96E7D00A275E0 /* Debug */,
+				026628401DA96E7D00A275E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026628501DAAB83300A275E0 /* Build configuration list for PBXNativeTarget "SiriChatApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026628511DAAB83300A275E0 /* Debug */,
+				026628521DAAB83300A275E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 026628141DA96D3A00A275E0 /* Project object */;
+}
